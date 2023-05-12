@@ -98,13 +98,7 @@ void Heap<T>::remove(T value) {
 template <typename T>
 T Heap<T>::getMin() {
   // TO BE IMPLEMENTED
-    T t_min;
-    for (int i = 0; i < values.size(); i++) {
-        if (values[i] < t_min) {
-            t_min = values[i];
-        }
-    }
-    return t_min;
+    return values[0];
 }
 
 /*******************************/
